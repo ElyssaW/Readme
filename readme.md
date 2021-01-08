@@ -51,6 +51,6 @@ This, when exported, will allow you to import an object containing the BeBasic f
 
 You have to bring the module into the Javascript file that you wish to use it in by using import. Include this code in your destination file:
 
-* const myModule = require('./myModule.js')
+* `const myModule = require('./myModule.js')`
 
-This will search for the Javascript by the file name, and import it into the Javascript file, assigning it to myModule variable. The code can then be called by myModules.beBasic (Or myModules.[Whatever the function name is.])
+This will search for the Javascript by the file name, and import it into the Javascript file, assigning it to myModule variable. The code can then be called by writing `myModule.beBasic` (Or myModule.[Whatever the function name is.])
