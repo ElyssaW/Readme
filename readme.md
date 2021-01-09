@@ -54,3 +54,31 @@ You have to bring the module into the Javascript file that you wish to use it in
 * `const myModule = require('./myModule.js')`
 
 This will search for the Javascript by the file name, and import it into the Javascript file, assigning it to myModule variable. The code can then be called by writing `myModule.beBasic` (Or myModule.[Whatever the function name is.])
+
+## Install Modules
+
+You can use NPM to download new modules from the internet and beyond (Or just the internet.) YOu can do this by opening the target directory in command line and writing
+
+* `npm i [module name]`
+
+You can use -g to install packages globally, by generally that's not
+
+# Express.js
+
+Initialize node with npm, initialize nodemon with nodemon, install express with node i express.
+
+In your Javascript, import express with `const express = require('express.js')`
+
+Instantiate your server with `let app = express()`
+
+Listen to your choosen port with `app.listen([port name])`
+
+Send responses with `app.get('[url], (req, res) => {
+    res.Send([response])
+}')`
+
+OR
+
+`app.get('[url], (req, res) => {
+    res.SendFile(__dirname+'[relative file path to html]')
+}')`
